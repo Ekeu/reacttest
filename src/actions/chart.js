@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { DATA_SUCCESS, DATA_ERROR, VIEWERS_LOADED, VIEWERS_ERROR } from './types';
+import { DATA_SUCCESS, DATA_ERROR } from './types';
 
 export const loadData = async (body, http) => {
   const config = {

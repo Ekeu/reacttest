@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Spinner from '../layout/Spinner';
 import BandWidth from './BandWidth';
 import Concurrent from './Concurrent';
+import DashBoardActions from './DashBoardActions';
 import { extractCurrentClient } from '../../actions/profile';
 import { extractchartData } from '../../actions/chart';
 import { extractConcurrentViewers } from '../../actions/viewers';
@@ -31,6 +32,9 @@ const Dashboard = ({
         <i className='fas fa-chart-line'></i>
         Welcome {user && user.lname}
       </p>
+      <Fragment>
+        <DashBoardActions/>
+      </Fragment>
       <BandWidth cdn={cdn} p2p={p2p} maxSum={maxSum} maxCdn={maxCdn} />
       <Concurrent concurrence={concurrence}/>
     </Fragment>

@@ -9,7 +9,7 @@ import {
   LOGIN_FAIL,
   LOGOUT
 } from './types';
-import setAuthToken from '../utils/setAuthToken';
+//import setAuthToken from '../utils/setAuthToken';
 
 //Load Client: Use this if taking your token from headers
 /* export const loadUser = () => async (dispatch) => {
@@ -130,12 +130,12 @@ export const login = (identifiant, password) => async (dispatch) => {
     });
     dispatch(loadUser());
   } catch (error) {
-    console.log(error)
-    //const errors = error.response.data.errors;
+    //console.log(error)
+    const errors = error.response.data.errors;
 
-   /*  if (errors) {
+    if (errors) {
       errors.forEach((error) => dispatch(setAlert(error.msg, 'danger')));
-    } */
+    }
     dispatch({
       type: LOGIN_FAIL,
     });

@@ -9,7 +9,7 @@ import {
 } from '../actions/types';
 
 const initialState = {
-  token: localStorage.getItem('token'),
+  session_token: localStorage.getItem('token'),
   isAuthenticated: null,
   loading: true,
   user: null,
@@ -49,7 +49,7 @@ export default function (state = initialState, action) {
       localStorage.removeItem('token');
       return {
         ...state,
-        token: null,
+        session_token: null,
         isAuthenticated: false,
         loading: false,
       };

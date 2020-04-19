@@ -1,8 +1,6 @@
 import {
   DATA_SUCCESS,
-  DATA_ERROR,
-  VIEWERS_LOADED,
-  VIEWERS_ERROR,
+  DATA_ERROR
 } from '../actions/types';
 
 const initialState = {

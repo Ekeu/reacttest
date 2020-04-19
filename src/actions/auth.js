@@ -143,6 +143,25 @@ export const login = (identifiant, password) => async (dispatch) => {
 };
 
 // Logging out client
-export const logout = () => dispatch => {
-  dispatch({type: LOGOUT})
+export const logout = () => async (dispatch) => {
+  const config = {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  };
+  const body = {
+    session_token: localStorage.token
+  }
+  try {
+    const res = await axios.post(
+      'http://localhost:5000/logout',
+      body,
+      config
+    );
+    console.log(res);
+    dispatch({type: LOGOUT});
+    dispatch(setAlert('Logged out.', 'success'));
+  } catch (error) {
+    console.log(error);
+  }
 }

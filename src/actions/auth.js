@@ -11,7 +11,9 @@ import {
 } from './types';
 //import setAuthToken from '../utils/setAuthToken';
 
-//Load Client: Use this if taking your token from headers
+/**
+ * Load Client: Use this if taking your token from headers
+ */
 /* export const loadUser = () => async (dispatch) => {
   if (localStorage.token) {
     setAuthToken(localStorage.token);
@@ -58,7 +60,10 @@ export const loadUser = () => async (dispatch) => {
   }
 };
 
-//Register a Client
+/**
+ * 
+ * To register you need /api/user in the BackEnd server
+ */
 export const register = ({
   fname,
   lname,
@@ -110,7 +115,7 @@ export const login = (identifiant, password) => async (dispatch) => {
   const config = {
     headers: {
       'Content-Type': 'application/json',
-    },
+    }
   };
 
   const body = JSON.stringify({

@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard Component should render correctly without props 1`] = `
+<Fragment>
+  <h1
+    className="large text-primary"
+  >
+    Streaming
+  </h1>
+  <p
+    className="lead"
+  >
+    <i
+      className="fas fa-chart-line"
+    />
+    Welcome 
+    Ulrich
+  </p>
+  <DashBoardActions />
+  <BandWidth
+    cdn={
+      Array [
+        Array [
+          1234,
+          123,
+        ],
+        Array [
+          1234,
+          123,
+        ],
+        Array [
+          1234,
+          123,
+        ],
+      ]
+    }
+    maxCdn={345.5}
+    maxSum={345.5}
+    p2p={
+      Array [
+        Array [
+          1234,
+          123,
+        ],
+        Array [
+          1234,
+          123,
+        ],
+        Array [
+          1234,
+          123,
+        ],
+      ]
+    }
+  />
+  <Concurrent
+    concurrence={
+      Array [
+        Array [
+          1234,
+          123,
+        ],
+        Array [
+          1234,
+          123,
+        ],
+        Array [
+          1234,
+          123,
+        ],
+      ]
+    }
+  />
+</Fragment>
+`;

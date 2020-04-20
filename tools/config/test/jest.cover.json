@@ -1,0 +1,31 @@
+{
+    "roots": [
+        "<rootDir>/src"
+    ],
+    "notify": true,
+    "rootDir": "../../../",
+    "unmockedModulePathPatterns": [
+        "<rootDir>/node_modules/react/",
+        "<rootDir>/node_modules/babel-runtime"
+    ],
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+        "<rootDir>/src/*.{js,jsx}"
+    ],
+    "coverageReporters": [
+        "lcov",
+        "text-summary"
+    ],
+    "transformIgnorePatterns": [
+        "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+        "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "transform": {
+        "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+    },
+    "testPathIgnorePatterns": [
+        "<rootDir>/(build|internal|node_modules|flow-typed|public)/"
+    ],
+    "testEnvironment": "jest-environment-jsdom-global"
+}

@@ -1,0 +1,5 @@
+{
+    "mongoURI": "mongodb+srv://ulrich96:ulrich96@gforum-o35c0.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "growpySecretToken"
+    
+}

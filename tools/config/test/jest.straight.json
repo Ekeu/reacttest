@@ -1,0 +1,12 @@
+{
+    "roots": [
+        "<rootDir>/src"
+    ],
+    "notify": true,
+    "rootDir": "../../../",
+    "unmockedModulePathPatterns": [
+        "<rootDir>/node_modules/react/",
+        "<rootDir>/node_modules/babel-runtime"
+    ],
+    "testEnvironment": "jest-environment-jsdom-global"
+}

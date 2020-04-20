@@ -1,7 +1,7 @@
 import React, { useEffect, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Spinner from '../layout/Spinner';
+//import Spinner from '../layout/Spinner';
 import BandWidth from './BandWidth';
 import Concurrent from './Concurrent';
 import DashBoardActions from './DashBoardActions';
@@ -24,7 +24,7 @@ const Dashboard = ({
     extractConcurrentViewers(1585834831000, 1589118031000);
   }, []);
   return loading && profile === null ? (
-    <Spinner />
+    {/* <Spinner /> */}
   ) : (
     <Fragment>
       <h1 className='large text-primary'>Streaming</h1>
